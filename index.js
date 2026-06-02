@@ -75,6 +75,16 @@ app.get('/perfil', (req, res) => {
     });
 });
 
+app.get('/filmes2', (req, res) => {
+    const filmes2 = [
+            { nome: 'A Hora do Rush'},
+            { nome: 'Gente grande'}
+        ]
+        res.render('filmes2', {
+        filmes: filmes2
+    });
+}); 
+
 app.listen(
     3000, 
     () => console.log('sistema encontrado')
