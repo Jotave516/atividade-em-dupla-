@@ -68,6 +68,13 @@ app.get('/usuarios', (req, res) => {
     res.send(`filtrando usuário com idade: ${idade}`);
 });
 
+app.get('/perfil', (req, res) => {
+    res.render('home', {
+        nome: 'João',
+        idade: 16
+    });
+});
+
 app.listen(
     3000, 
     () => console.log('sistema encontrado')
