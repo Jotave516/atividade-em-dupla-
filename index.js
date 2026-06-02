@@ -94,6 +94,17 @@ app.get('/scfc', (req, res) => {
     });
 });
 
+app.get('/filmes3', (req, res) => {
+    const filmes3 = [
+            {nome: 'Jurassic world', ano: 2015},
+            {nome:'Rota de fuga', ano:2013}
+            
+        ]
+        res.render('filmes3', {
+        filmes: filmes3
+    });
+}); 
+
 app.listen(
     3000, 
     () => console.log('sistema encontrado')
