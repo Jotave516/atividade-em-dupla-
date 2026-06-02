@@ -1,1 +1,1 @@
-# atividade em dupla desenvolvimento web
+# atividade em dupla desenvolvimento web Joaquim e João
