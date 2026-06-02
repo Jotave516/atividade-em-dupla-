@@ -85,6 +85,15 @@ app.get('/filmes2', (req, res) => {
     });
 }); 
 
+app.get('/scfc', (req, res) => {
+    res.render('scfc', {
+        clube: 'Santa Cruz FC',
+        cidade: 'Recife',
+        fundado: 1914,
+        titulos: 29
+    });
+});
+
 app.listen(
     3000, 
     () => console.log('sistema encontrado')
