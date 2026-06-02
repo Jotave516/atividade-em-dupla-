@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{clube}}</h1>
+
+<p>Cidade: {{cidade}}</p>
+
+{{#if fundado}}
+    <p>Fundado em: {{fundado}}</p>
+{{else}}
+    <p>Data de fundação não informada</p>
+{{/if}}
+
+{{#unless titulos}}
+    <p>Nenhum título registrado</p>
+{{/unless}}
+
+{{#if titulos}}
+    <p>Títulos oficiais: {{titulos}}</p>
+{{/if}}
+</body>
+</html>
