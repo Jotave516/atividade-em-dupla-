@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vídeos TikTok</h1>
+    <a href="/videos/cadastrar">Cadastrar Vídeo</a>
+<hr>
+
+{{#each videos}}
+<div style="border:1px solid black; margin:10px; padding:10px;">
+    
+    <img src="{{this.thumbnail}}" width="150">
+
+    <h2>{{this.titulo}}</h2>
+    <p>Criador: {{this.criador}}</p>
+    <p>Visualizações: {{this.visualizacoes}}</p>
+    <p>Curtidas: {{this.curtidas}}</p>
+    <p>Hashtag: {{this.hashtag}}</p>
+
+</div>
+{{/each}}
+</body>
+</html>
