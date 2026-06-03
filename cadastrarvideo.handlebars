@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastrar Vídeo</h1>
+
+<form action="/videos/cadastrar" method="POST">
+    <label>Título:</label>
+    <input type="text" name="titulo">
+    <br>
+    <label>Criador:</label>
+    <input type="text" name="criador">
+    <br>
+    <label>Descrição:</label>
+    <textarea name="descricao"></textarea>
+    <br>
+    <label>Visualizações:</label>
+    <input type="number" name="visualizacoes">
+    <br>
+    <label>Curtidas:</label>
+    <input type="number" name="curtidas">
+    <br>
+    <label>Hashtag:</label>
+    <input type="text" name="hashtag">
+    <br>
+    <label>URL do Vídeo:</label>
+    <input type="text" name="urlVideo">
+    <br>
+    <label>URL da Thumbnail:</label>
+    <input type="text" name="thumbnail">
+    <br>
+
+    <button type="submit">Cadastrar</button>
+
+</form>
+</body>
+</html>
